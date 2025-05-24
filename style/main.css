@@ -246,7 +246,61 @@ button:hover::after, .invitation-btn:hover::after {
   0% { opacity: 0; transform: translateY(30px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+/* Our Story Section */
+.our-story-section {
+  background: linear-gradient(120deg, #fff1eb 60%, #ace0f9 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(172, 224, 249, 0.12);
+  padding: 2.5rem 2rem;
+  margin: 3rem auto 2rem auto;
+  max-width: 900px;
+  animation: fade-in 1.2s ease-out;
+  position: relative;
+  z-index: 2;
+}
 
+.our-story-title {
+  font-family: 'Sacramento', cursive;
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  color: #ff6b6b;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(255, 107, 107, 0.08);
+  animation: title-glow 3s ease-in-out infinite alternate;
+}
+
+.our-story-content {
+  color: #333;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.our-story-content p {
+  margin-bottom: 1.2rem;
+  transition: opacity 0.4s;
+}
+
+.our-story-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .our-story-section {
+    padding: 1.2rem 0.5rem;
+  }
+  .our-story-title {
+    font-size: clamp(1.3rem, 6vw, 2rem);
+  }
+  .our-story-content {
+    font-size: 1rem;
+    padding: 0 0.2rem;
+  }
+}
 .image-text {
   display: flex;
   align-items: center;

@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     "../images/OMP10156.jpg",
     "../images/OMP10089.jpg",
     "../images/IMG_0360.jpg",
-
   ];
   const gallery = document.getElementById('galleryGrid');
   imagePaths.forEach((src, index) => {
@@ -22,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Background image rotation
   const bgImages = [
-    '../images/wedding.jpg',
     '../images/OMP10156.jpg',
     '../images/lowlight.jpg',
+    '../images/both.jpg',
   ];
   let currentBg = 0;
   setInterval(() => {
